@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>elSouq</title>
+    <link rel="icon" href="products/cart.svg" type="image/png">
+    <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+
+    <div id="AdminValidation" class="menu">
+        <div class="content">
+            <div class="header">
+                <h class="adheader">Admin Validation</h>
+            </div>
+            <div class="body">
+                        <h class="adheader">Please Write Your Admin Code</h>
+                        <input type="password" name="admincode" id="admincode" placeholder="Code">
+                        <input type="submit" name="submit" value="Login as admin" class="AdminButtons"onclick="CheckIfAdminValid()">
+            </div>
+        </div>
+    
+    </div>
+
+
+    <div id="AdminMenu" class="menu">
+        <div class="content">
+            <div class="header">
+                <h class="adhead">Admin Menu</h>
+                </div>
+                <div class="body">
+                    <h class="adhead">Choose theme</h><br>
+                    <button class="AdminButtons" onclick="Theme1()">Theme 1</button>
+                    <button class="AdminButtons" onclick="Theme2()">Theme 2</button>
+                    <button class="AdminButtons" onclick="Theme3()">Theme 3</button><br>
+                    <h class="adhead">Change background color</h><br>
+                    <input type="color" id="BgColor">
+                    
+                </div>
+            </div>
+    
+    </div>
+
+    
+    <nav class="navpar" id="nvbar">
+        <div class="elSouq">
+            <img src="https://img.icons8.com/cotton/64/000000/shop--v2.png"/>
+            <a>elSouq</a>
+        </div>
+        
+        <div class="search">
+            <input type="text" placeholder="Search">
+            <img src="https://img.icons8.com/pastel-glyph/64/000000/search--v2.png"/> 
+        </div>
+        
+        <div class="accounts">
+            <button onclick="accounts()">Accounts</button>
+            <div id="list" class="methods">
+                <a href="login.html">Login as a User</a><br>
+                <a href="#" onClick="ShowAdminValidation()">Login as a Admin</a><br>
+                <a href="register.html">Sign Up</a>
+            </div>
+        </div>
+       
+        <div class="Lang-cur">
+            <select>
+                <option value="1">USD</option>
+                <option value="1">EUR</option>
+                <option value="1">AOA</option>
+                <option value="1">AUD</option>
+            </select>
+            <select>
+                <option value="1">ENG</option>
+                <option value="1">FRA</option>
+                <option value="1">BAN</option>
+            </select>
+        </div>
+
+    </nav>
+
+    <div class="leftPair" id="lp">
+        <br><br><br>
+        <ul>   
+           <li><a href="home.html" class="link">Home</a></li>
+           <li><a href="labtop.html" class="link">Labtops</a></li>
+           <li><a href="mobile.html" class="link">Mobiles</a></li>
+           <li><a href="watch.html" class="link">Watchs</a></li>
+           <li style="background-color: #555;"><a  style="color: white;" href="consoles.html" class="link">Consoles</a></li>
+           <li><a href="#" class="link" id="adminShow" onClick="ShowAdminMenu()">Admin Menu</a></li>      
+        </ul>  
+    </div>
+
+     <div class="rightPair">     
+        <dir style="margin-top: 60px;"></dir>
+        <div class="offers">
+            <div class="newTitles">
+                <h1>Consoles</h1>
+            </div>
+            
+            <div class="container">
+                <img src="images/consoles.jpg" alt="Error!!">
+                <div class="layer">
+                    <a href="#"><div class="text">Consoles</div></a>
+                </div>
+            </div>        
+                
+            <div class="container">
+                <img src="images/consoles2.jpg" alt="Error!!">
+                <div class="layer">
+                    <a href="#"><div class="text">Consoles</div></a>
+                </div>
+            </div>
+
+            <div class="container">
+                <img src="images/consoles9.jpg" alt="Error!!">
+                <div class="layer">
+                    <a href="#"><div class="text">Consoles</div></a>
+                </div>         
+            </div>
+
+            <div class="container">
+                <img src="images/consoles4.jpg" alt="Error!!">
+                <div class="layer">
+                    <a href="#"><div class="text">Consoles</div></a>
+                </div>         
+            </div>
+
+            <div class="buttonMore" id="buttonMore">
+                <button onclick="more()">More...</button>
+            </div>
+
+            <div class="moreContainers" id="moreContainers">
+                <div class="container">
+                    <img src="images/consoles5.jpg" alt="Error!!">
+                    <div class="layer">
+                    <a href="#"><div class="text">Consoles</div></a>
+                   </div>
+                </div>
+                    
+                <div class="container">
+                    <img src="images/consoles6.jpg" alt="Error!!">
+                    <div class="layer">
+                    <a href="#"><div class="text">Consoles</div></a>
+                    </div>
+                </div>
+    
+                <div class="container">
+                    <img src="images/consoles7.jpg" alt="Error!!">
+                    <div class="layer">
+                    <a href="#"><div class="text">Consoles</div></a>
+                     </div>        
+                </div>
+    
+                <div class="container">
+                    <img src="images/consoles8.jpg" alt="Error!!">
+                    <div class="layer">
+                    <a href="#"><div class="text">Consoles</div></a>
+                    </div>
+                </div>
+    
+                <div class="container">
+                    <img src="images/consoles3.jpg" alt="Error!!">
+                    <div class="layer">
+                    <a href="#"><div class="text">Consoles</div></a>
+                    </div>
+                </div>
+                    
+                <div class="container">
+                    <img src="images/consoles10.jpg" alt="Error!!">
+                    <div class="layer">
+                    <a href="#"><div class="text">Consoles</div></a>
+                    </div>
+                </div>
+    
+                <div class="container">
+                    <img src="images/consoles2.jpg" alt="Error!!">
+                    <div class="layer">
+                    <a href="#"><div class="text">Consoles</div></a>
+                    </div>           
+                </div>
+    
+                <div class="container">
+                    <img src="images/consoles4.jpg" alt="Error!!">
+                    <div class="layer">
+                    <a href="#"><div class="text">Consoles</div></a>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </div> 
+
+        <div class="ads" id="ads2">
+            <a href="https://deals.souq.com/eg-en/tvs/c/13523"><img style="width: 100%;" src="images/tvAds.png" alt="Errors!!"></a>
+            <p>Ads by <span> Google </span><button onclick="stopAds2()">Stop seeing this ad</button></p>
+            
+        </div>
+
+        <footer>
+            <p class="endText">I hope everyone will find what they are looking for in our store <span style="color: #4d8eff;">^_^</span> Made by <span style="color: #4d8eff;">Team 7</span></p>
+            <div class="socialIcons">
+               <img class="socialIcon" src="icons/android.png">
+               <img class="socialIcon" src="icons/facebook.png">
+               <img class="socialIcon" src="icons/google+.png">
+               <img class="socialIcon" src="icons/in.png">
+               <img class="socialIcon" src="icons/instagram.png">
+               <img class="socialIcon" src="icons/twitter.png">
+            </div> 
+            
+        </footer>    
+     </div>
+     
+
+    <script src="JS/home.js"></script>
+</body>
+</html>

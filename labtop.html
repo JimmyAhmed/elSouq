@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>elSouq</title>
+    <link rel="icon" href="products/cart.svg" type="image/png">
+    <link rel="stylesheet" href="css/labtop.css">
+    <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+
+    <div id="AdminValidation" class="menu">
+        <div class="content">
+            <div class="header">
+                <h>Modal Header</h>
+            </div>
+            <div class="body">
+                        <h>Please Write Your Admin Code</h>
+                        <input type="password" name="admincode" id="admincode" placeholder="Code">
+                        <input type="submit" name="submit" value="Login as admin" class="AdminButtons"onclick="CheckIfAdminValid()">
+            </div>
+        </div>
+    
+    </div>
+
+
+    <div id="AdminMenu" class="menu">
+        <div class="content">
+            <div class="header">
+                <h class="adhead">Modal Header</h>
+                </div>
+                <div class="body">
+                    <h class="adhead">Choose theme</h><br>
+                    <button class="AdminButtons">Theme 1</button>
+                    <button class="AdminButtons">Theme 2</button>
+                    <button class="AdminButtons">Theme 3</button><br>
+                    <h class="adhead">Change background color</h><br>
+                    <input type="color" id="BgColor">
+                    
+                </div>
+            </div>
+    
+    </div>
+
+    
+    <nav class="navpar" id="nvbar">
+        <div class="elSouq">
+            <img src="https://img.icons8.com/cotton/64/000000/shop--v2.png"/>
+            <a>elSouq</a>
+        </div>
+        
+        <div class="search">
+            <input type="text" placeholder="Search">
+            <img src="https://img.icons8.com/pastel-glyph/64/000000/search--v2.png"/> 
+        </div>
+        
+        <div class="accounts">
+            <button onclick="accounts()">Accounts</button>
+            <div id="list" class="methods">
+                <a href="login.html">Login as a User</a><br>
+                <a href="#" onClick="ShowAdminValidation()">Login as a Admin</a><br>
+                <a href="register.html">Sign Up</a>
+            </div>
+        </div>
+       
+        <div class="Lang-cur">
+            <select>
+                <option value="1">USD</option>
+                <option value="1">EUR</option>
+                <option value="1">AOA</option>
+                <option value="1">AUD</option>
+            </select>
+            <select>
+                <option value="1">ENG</option>
+                <option value="1">FRA</option>
+                <option value="1">BAN</option>
+            </select>
+        </div>
+
+    </nav>
+
+    <div class="leftPair" id="lp">
+        <br><br><br>
+        <ul>   
+           <li><a href="home.html" class="link">Home</a></li>
+           <li style="background-color: #555;" ><a style="color: white;" href="labtop.html" class="link">Labtops</a></li>
+           <li><a href="mobile.html" class="link">Mobiles</a></li>
+           <li><a href="watch.html" class="link">Watchs</a></li>
+           <li><a href="consoles.html" class="link">Consoles</a></li>
+           <li><a href="#" class="link" id="adminShow" onClick="ShowAdminMenu()">Admin Menu</a></li>      
+        </ul>  
+    </div>
+
+     <div class="rightPair">
+
+        <div class="fady"></div>
+  
+        <div class="products">
+  
+          <div class="left">
+            <img id="product1-img" src="./products/product1.1.png">
+            <div class="select">
+              <input type="image" src="./arrow-left.svg" onclick=before1();>
+              <img id="full-dot1" src="./dot-full.svg">
+              <img id="dot1" src="./dot.svg">
+              <input type="image" src="./arrow-right.svg" onclick=after1();> 
+            </div>
+          </div>
+  
+          <div class="right">
+              <h1>Lenovo Ideapad L340</h1>
+              <p></p>
+              <p>$500<br>Laptop ideapad L340-15IRH Gaming - intel core i7-9750H, 16GB RAM , 1TB HDD + 256 SSD, NVIDIA GeForce GTX 1650 4GB GDDR5 Graphics, 15.6 inch FHD IPS, Backlit , Dos, Black</p>
+              <img src="./stars.svg">
+              <div class="buying">
+                <!-- creating a pop out window -->
+                  <input type="image" id="btn1" src="./cart.svg">
+                  <div id="model1" class="modal">
+                      <div class="modal-content">
+                          <span onclick="close()" class="close">
+                              &times;
+                          </span>
+                          <p>The product has been successfully added to your cart!</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+  
+        </div>
+  
+        
+  
+  
+          
+            <script>function before1(){ 
+          document.getElementById('product1-img').src="./products/product1.1.png";  
+          document.getElementById('full-dot1').src="./dot-full.svg";
+          document.getElementById('dot1').src="./dot.svg";
+      } 
+        
+      function after1(){ 
+          document.getElementById('product1-img') 
+          .src="./products/product1.2.png"; 
+         document.getElementById('full-dot1').src="./dot.svg";
+        document.getElementById('dot1').src="./dot-full.svg";
+      } 
+            </script>
+  
+             <script type="text/javascript">
+         var modal = document.getElementById("model1");
+  // Get the button that opens the modal
+  var btn = document.getElementById("btn1");
+  
+  // Get the <span> element that closes the modal
+  var span = document.getElementsByClassName("close")[0];
+  
+  // When the user clicks on the button, open the modal
+  btn.onclick = function() {
+    modal.style.display = "block";
+  }
+  
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function() {
+    modal.style.display = "none";
+  }
+  
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }    
+            </script>
+  <!------------------------------------------------------->
+  
+  
+        <hr>
+  
+        
+  
+    <!--..............second product's code..................-->
+  
+        <div class="products">
+  
+          <div class="left">
+            <img id="product2-img" src="./products/2.1.png">
+            <div class="select">
+              <input type="image" src="./arrow-left.svg" onclick=before2();>
+              <img id="full-dot2" src="./dot-full.svg">
+              <img id="dot2" src="./dot.svg">
+              <input type="image" src="./arrow-right.svg" onclick=after2();> 
+            </div>
+          </div>
+  
+          <div class="right">
+              <h1>ASUS VivoBook L203MA</h1>
+              <p></p>
+              <p>$287<br>11.6” HD Display, Intel Celeron Dual Core CPU, 4GB RAM, 64GB Storage, USB-C, Windows 10 Home In S Mode, Up To 10 Hours Battery Life, One Year of Microsoft 365, L203MA-DS04</p>
+              <img src="./stars.svg">
+              <div class="buying">
+                <!-- creating a pop out window -->
+                  <input type="image" id="btn2" src="./cart.svg">
+                  <div id="model2" class="modal">
+                      <div class="modal-content">
+                          <span class="close">
+                              &times;
+                          </span>
+                          <p>The product has been successfully added to your cart!</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+  
+        </div>
+            <script>function before2(){ 
+          document.getElementById('product2-img').src="./products/2.1.png"; 
+           document.getElementById('full-dot2').src="./dot-full.svg";
+          document.getElementById('dot2').src="./dot.svg"; 
+      } 
+        
+      function after2(){ 
+          document.getElementById('product2-img') 
+          .src="./products/2.2.png"; 
+           document.getElementById('full-dot2').src="./dot.svg";
+        document.getElementById('dot2').src="./dot-full.svg";
+         
+      } </script>
+            <!-- scrip for the pop out window-->
+         <script type="text/javascript">
+         var modal = document.getElementById("model2");
+  // Get the button that opens the modal
+  var btn = document.getElementById("btn2");
+  
+  // Get the <span> element that closes the modal
+  var span = document.getElementsByClassName("close")[0];
+  
+  // When the user clicks on the button, open the modal
+  btn.onclick = function() {
+    modal.style.display = "block";
+  }
+  
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function() {
+    modal.style.display = "none";
+  }
+  
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }    
+         </script>
+  <!------------------------------------------------------->
+         
+            <hr>
+  
+  
+            <!--..............third product's code..................-->
+        <div class="products">
+  
+          <div class="left">
+            <img id="product3-img" src="./products/3.1.png">
+            <div class="select">
+              <input type="image" src="./arrow-left.svg" onclick=before3();>
+              <img id="full-dot3" src="./dot-full.svg">
+              <img id="dot3" src="./dot.svg">
+              <input type="image" src="./arrow-right.svg" onclick=after3();> 
+            </div>
+          </div>
+  
+          <div class="right">
+              <h1>ASUS VivoBook 15 Thin and Light</h1>
+              <p></p>
+              <p>$488<br>15.6” FHD Display, Intel i3-1005G1 CPU, 8GB RAM, 128GB SSD, Backlit Keyboard, Fingerprint, Windows 10 Home in S Mode, Slate Gray, F512JA-AS34</p>
+              <img src="./stars.svg">
+              <div class="buying">
+                <!-- creating a pop out window -->
+                  <input type="image" id="btn3" src="./cart.svg">
+                  <div id="model3" class="modal">
+                      <div class="modal-content">
+                          <span class="close">
+                              &times;
+                          </span>
+                          <p>The product has been successfully added to your cart!</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+  
+        </div>
+          <!-- scrip for the image change animation-->
+            <script>function before3(){ 
+          document.getElementById('product3-img').src="./products/3.1.png";  
+           document.getElementById('full-dot3').src="./dot-full.svg";
+          document.getElementById('dot3').src="./dot.svg";
+      } 
+        
+      function after3(){ 
+          document.getElementById('product3-img') 
+          .src="./products/3.2.png"; 
+           document.getElementById('full-dot3').src="./dot.svg";
+        document.getElementById('dot3').src="./dot-full.svg";
+         
+      } </script>
+  
+             <!-- scrip for the pop out window-->
+         <script type="text/javascript">
+         var modal = document.getElementById("model3");
+  // Get the button that opens the modal
+  var btn = document.getElementById("btn3");
+  
+  // Get the <span> element that closes the modal
+  var span = document.getElementsByClassName("close")[0];
+  
+  // When the user clicks on the button, open the modal
+  btn.onclick = function() {
+    modal.style.display = "block";
+  }
+  
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function() {
+    modal.style.display = "none";
+  }
+  
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }    
+         </script>
+  <!------------------------------------------------------->
+          
+  
+            <hr>
+  
+  
+            <!--..............fourth product's code..................-->
+   <div class="products">
+  
+          <div class="left">
+            <img id="product4-img" src="./products/4.1.png">
+            <div class="select">
+              <input type="image" src="./arrow-left.svg" onclick=before4();>
+              <img id="full-dot4" src="./dot-full.svg">
+              <img id="dot4" src="./dot.svg">
+              <input type="image" src="./arrow-right.svg" onclick=after4();> 
+            </div>
+          </div>
+  
+          <div class="right">
+              <h1>Lenovo IdeaPad Flex</h1>
+              <p></p>
+              <p>$729<br>FHD (1920 x 1080) Touch Display, Intel Core i5-1035G1 Processor, 8GB DDR4 OnBoard RAM, 128GB SSD, Intel UHD Graphics, Win 10, 81X1004RUS, Graphite Grey</p>
+              <img src="./stars.svg">
+              <div class="buying">
+                <!-- creating a pop out window -->
+                  <input type="image" id="btn4" src="./cart.svg">
+                  <div id="model4" class="modal">
+                      <div class="modal-content">
+                          <span class="close">
+                              &times;
+                          </span>
+                          <p>The product has been successfully added to your cart!</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+  
+        </div>
+          <!-- scrip for the image change animation-->
+            <script>function before4(){ 
+          document.getElementById('product4-img').src="./products/4.1.png";
+           document.getElementById('full-dot4').src="./dot-full.svg";
+          document.getElementById('dot4').src="./dot.svg";  
+      } 
+        
+      function after4(){ 
+          document.getElementById('product4-img') 
+          .src="./products/4.2.png"; 
+           document.getElementById('full-dot4').src="./dot.svg";
+        document.getElementById('dot4').src="./dot-full.svg";
+         
+      } </script>
+  
+             <!-- scrip for the pop out window-->
+         <script type="text/javascript">
+         var modal = document.getElementById("model4");
+  // Get the button that opens the modal
+  var btn = document.getElementById("btn4");
+  
+  // Get the <span> element that closes the modal
+  var span = document.getElementsByClassName("close")[0];
+  
+  // When the user clicks on the button, open the modal
+  btn.onclick = function() {
+    modal.style.display = "block";
+  }
+  
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function() {
+    modal.style.display = "none";
+  }
+  
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }    
+         </script>
+  <!------------------------------------------------------->
+  
+            <hr>
+  
+            <!--..............fifth product's code..................-->
+   <div class="products">
+  
+          <div class="left">
+            <img id="product5-img" src="./products/5.1.png">
+            <div class="select">
+              <input type="image" src="./arrow-left.svg" onclick=before5();>
+              <img id="full-dot5" src="./dot-full.svg">
+              <img id="dot5" src="./dot.svg">
+              <input type="image" src="./arrow-right.svg" onclick=after5();> 
+            </div>
+          </div>
+  
+          <div class="right">
+              <h1>2019 HP Stream Laptop</h1>
+              <p></p>
+              <p>$349<br>14inch, Intel Celeron N4000, Intel UHD Graphics 600, 4GB SDRAM, 32GB SSD, HDMI, Win10, 14-cb164wm Brilliant Black</p>
+              <img src="./stars.svg">
+              <div class="buying">
+                <!-- creating a pop out window -->
+                  <input type="image" id="btn5" src="./cart.svg">
+                  <div id="model5" class="modal">
+                      <div class="modal-content">
+                          <span class="close">
+                              &times;
+                          </span>
+                          <p>The product has been successfully added to your cart!</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+  
+        </div>
+          <!-- scrip for the image change animation-->
+            <script>function before5(){ 
+          document.getElementById('product5-img').src="./products/5.1.png";  
+           document.getElementById('full-dot5').src="./dot-full.svg";
+          document.getElementById('dot5').src="./dot.svg";
+      } 
+        
+      function after5(){ 
+          document.getElementById('product5-img') 
+          .src="./products/5.2.png"; 
+           document.getElementById('full-dot5').src="./dot.svg";
+        document.getElementById('dot5').src="./dot-full.svg";
+         
+      } </script>
+  
+          
+             <!-- scrip for the pop out window-->
+         <script type="text/javascript">
+         var modal = document.getElementById("model5");
+  // Get the button that opens the modal
+  var btn = document.getElementById("btn5");
+  
+  // Get the <span> element that closes the modal
+  var span = document.getElementsByClassName("close")[0];
+  
+  // When the user clicks on the button, open the modal
+  btn.onclick = function() {
+    modal.style.display = "block";
+  }
+  
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function() {
+    modal.style.display = "none";
+  }
+  
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }    
+         </script>
+  <!------------------------------------------------------->
+        
+            <hr>
+  
+            <!--..............sixth product's code..................-->
+  <div class="products">
+  
+          <div class="left">
+            <img id="product6-img" src="./products/6.1.png">
+            <div class="select">
+              <input type="image" src="./arrow-left.svg" onclick=before6();>
+              <img id="full-dot6" src="./dot-full.svg">
+              <img id="dot6" src="./dot.svg">
+              <input type="image" src="./arrow-right.svg" onclick=after6();> 
+            </div>
+          </div>
+  
+          <div class="right">
+              <h1>Acer Spin 5 Convertible Laptop</h1>
+              <p></p>
+              <p>$1099<br>13.5" 2K 2256 x 1504 IPS Touch, 10th Gen Intel Core i7-1065G7, 16GB LPDDR4X, 512GB NVMe SSD, WiFi 6, Backlit KB, FPR, Rechargeable Active Stylus, SP513-54N-74V2</p>
+              <img src="./stars.svg">
+              <div class="buying">
+                <!-- creating a pop out window -->
+                  <input type="image" id="btn6" src="./cart.svg">
+                  <div id="model6" class="modal">
+                      <div class="modal-content">
+                          <span class="close">
+                              &times;
+                          </span>
+                          <p>The product has been successfully added to your cart!</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+  
+        </div>
+          <!-- scrip for the image change animation-->
+            <script>function before6(){ 
+          document.getElementById('product6-img').src="./products/6.1.png";  
+            document.getElementById('full-dot6').src="./dot-full.svg";
+          document.getElementById('dot6').src="./dot.svg";
+      } 
+        
+      function after6(){ 
+          document.getElementById('product6-img') 
+          .src="./products/6.2.png"; 
+           document.getElementById('full-dot6').src="./dot.svg";
+        document.getElementById('dot6').src="./dot-full.svg";
+         
+      } </script>
+  
+             <!-- scrip for the pop out window-->
+         <script type="text/javascript">
+         var modal = document.getElementById("model6");
+  // Get the button that opens the modal
+  var btn = document.getElementById("btn6");
+  
+  // Get the <span> element that closes the modal
+  var span = document.getElementsByClassName("close")[0];
+  
+  // When the user clicks on the button, open the modal
+  btn.onclick = function() {
+    modal.style.display = "block";
+  }
+  
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function() {
+    modal.style.display = "none";
+  }
+  
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }    
+         </script>
+  <!------------------------------------------------------->
+         
+            <hr>
+  
+            <!--..............seventh product's code..................-->
+  <div class="products">
+  
+          <div class="left">
+            <img id="product7-img" src="./products/7.1.png">
+            <div class="select">
+              <input type="image" src="./arrow-left.svg" onclick=before7();>
+              <img id="full-dot7" src="./dot-full.svg">
+              <img id="dot7" src="./dot.svg">
+              <input type="image" src="./arrow-right.svg" onclick=after7();> 
+            </div>
+          </div>
+  
+          <div class="right">
+              <h1>Acer Predator Helios 300</h1>
+              <p></p>
+              <p>$1129<br>ntel Core i7-9750H, GeForce GTX 1660 Ti, 15.6" Full HD 144Hz Display, 3ms Response Time, 16GB DDR4, 512GB PCIe NVMe SSD, RGB Backlit Keyboard, PH315-52-710B</p>
+              <img src="./stars.svg">
+              <div class="buying">
+                <!-- creating a pop out window -->
+                  <input type="image" id="btn7" src="./cart.svg">
+                  <div id="model7" class="modal">
+                      <div class="modal-content">
+                          <span class="close">
+                              &times;
+                          </span>
+                          <p>The product has been successfully added to your cart!</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+  
+        </div>
+          <!-- scrip for the image change animation-->
+            <script>function before7(){ 
+          document.getElementById('product7-img').src="./products/7.1.png";  
+           document.getElementById('full-dot7').src="./dot-full.svg";
+          document.getElementById('dot7').src="./dot.svg";
+      } 
+        
+      function after7(){ 
+          document.getElementById('product7-img') 
+          .src="./products/7.2.png"; 
+           document.getElementById('full-dot7').src="./dot.svg";
+        document.getElementById('dot7').src="./dot-full.svg";
+         
+      } </script>
+  
+             <!-- scrip for the pop out window-->
+         <script type="text/javascript">
+         var modal = document.getElementById("model7");
+  // Get the button that opens the modal
+  var btn = document.getElementById("btn7");
+  
+  // Get the <span> element that closes the modal
+  var span = document.getElementsByClassName("close")[0];
+  
+  // When the user clicks on the button, open the modal
+  btn.onclick = function() {
+    modal.style.display = "block";
+  }
+  
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function() {
+    modal.style.display = "none";
+  }
+  
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }    
+         </script>
+  <!------------------------------------------------------->
+  
+            <hr>
+  
+  
+            <!--..............eighth product's code..................-->
+  <div class="products">
+  
+          <div class="left">
+            <img id="product8-img" src="./products/8.1.png">
+            <div class="select">
+              <input type="image" src="./arrow-left.svg" onclick=before8();>
+              <img id="full-dot8" src="./dot-full.svg">
+              <img id="dot8" src="./dot.svg">
+              <input type="image" src="./arrow-right.svg" onclick=after8();> 
+            </div>
+          </div>
+  
+          <div class="right">
+              <h1>2020 HP 17.3" Laptop</h1>
+              <p></p>
+              <p>$639<br>8th Gen Intel Quad-Core i5-8265U Up to 3.9GHz/ 8GB DDR4 RAM/ 256GB PCIe SSD/ DVD/ Bluetooth 4.2/ USB 3.1/ HDMI/ Windows 10 Home/ Black</p>
+              <img src="./stars.svg">
+              <div class="buying">
+                <!-- creating a pop out window -->
+                  <input type="image" id="btn8" src="./cart.svg">
+                  <div id="model8" class="modal">
+                      <div class="modal-content">
+                          <span class="close">
+                              &times;
+                          </span>
+                          <p>The product has been successfully added to your cart!</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+  
+        </div>
+          <!-- scrip for the image change animation-->
+            <script>function before8(){ 
+          document.getElementById('product8-img').src="./products/8.1.png";  
+           document.getElementById('full-dot8').src="./dot-full.svg";
+          document.getElementById('dot8').src="./dot.svg";
+      } 
+        
+      function after8(){ 
+          document.getElementById('product8-img') 
+          .src="./products/8.2.png"; 
+           document.getElementById('full-dot8').src="./dot.svg";
+        document.getElementById('dot8').src="./dot-full.svg";
+         
+      } </script>
+  
+             <!-- scrip for the pop out window-->
+         <script type="text/javascript">
+         var modal = document.getElementById("model8");
+  // Get the button that opens the modal
+  var btn = document.getElementById("btn8");
+  
+  // Get the <span> element that closes the modal
+  var span = document.getElementsByClassName("close")[0];
+  
+  // When the user clicks on the button, open the modal
+  btn.onclick = function() {
+    modal.style.display = "block";
+  }
+  
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function() {
+    modal.style.display = "none";
+  }
+  
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }    
+         </script>
+  <!------------------------------------------------------->
+      
+            <hr>
+  
+  
+             <!--..............ninth product's code..................-->
+  <div class="products">
+  
+          <div class="left">
+            <img id="product9-img" src="./products/9.1.png">
+            <div class="select">
+              <input type="image" src="./arrow-left.svg" onclick=before9();>
+              <img id="full-dot9" src="./dot-full.svg">
+              <img id="dot9" src="./dot.svg">
+              <input type="image" src="./arrow-right.svg" onclick=after9();> 
+            </div>
+          </div>
+  
+          <div class="right">
+              <h1>ASUS ZenBook 13</h1>
+              <p></p>
+              <p>$975<br>13.3” FHD WideView, 8th-Gen Intel Core i7-8565U CPU, 16GB RAM, 512GB PCIe SSD, Backlit KB, NumberPad, Military Grade, TPM, Windows 10 Pro, UX333FA-AB77, Royal Blue</p>
+              <img src="./stars.svg">
+              <div class="buying">
+                <!-- creating a pop out window -->
+                  <input type="image" id="btn9" src="./cart.svg">
+                  <div id="model9" class="modal">
+                      <div class="modal-content">
+                          <span class="close">
+                              &times;
+                          </span>
+                          <p>The product has been successfully added to your cart!</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+  
+        </div>
+          <!-- scrip for the image change animation-->
+            <script>function before9(){ 
+          document.getElementById('product9-img').src="./products/9.1.png";  
+           document.getElementById('full-dot9').src="./dot-full.svg";
+          document.getElementById('dot9').src="./dot.svg";
+      } 
+        
+      function after9(){ 
+          document.getElementById('product9-img') 
+          .src="./products/9.2.png"; 
+           document.getElementById('full-dot9').src="./dot.svg";
+        document.getElementById('dot9').src="./dot-full.svg";
+         
+      } </script>
+  
+            
+             <!-- scrip for the pop out window-->
+         <script type="text/javascript">
+         var modal = document.getElementById("model9");
+  // Get the button that opens the modal
+  var btn = document.getElementById("btn9");
+  
+  // Get the <span> element that closes the modal
+  var span = document.getElementsByClassName("close")[0];
+  
+  // When the user clicks on the button, open the modal
+  btn.onclick = function() {
+    modal.style.display = "block";
+  }
+  
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function() {
+    modal.style.display = "none";
+  }
+  
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }    
+         </script>
+  <!------------------------------------------------------->
+         
+            <hr>
+  
+  
+             <!--..............tenth product's code..................-->
+  <div class="products">
+  
+          <div class="left">
+            <img id="product10-img" src="./products/10.1.png">
+            <div class="select">
+              <input type="image" src="./arrow-left.svg" onclick=before10();>
+              <img id="full-dot10" src="./dot-full.svg">
+              <img id="dot10" src="./dot.svg">
+              <input type="image" src="./arrow-right.svg" onclick=after10();> 
+            </div>
+          </div>
+  
+          <div class="right">
+              <h1>Dell Inspiron 14</h1>
+              <p></p>
+              <p>$699<br>Intel Core i5-1035G4 (Beat i7-7500) 10 Geneartion, 8GB RAM, 256GB SSD, HDMI, WiFi, Intel UHD Graphics, Bluetooth, Windows 10</p>
+              <img src="./stars.svg">
+              <div class="buying">
+                <!-- creating a pop out window -->
+                  <input type="image" id="btn10" src="./cart.svg">
+                  <div id="model10" class="modal">
+                      <div class="modal-content">
+                          <span class="close">
+                              &times;
+                          </span>
+                          <p>The product has been successfully added to your cart!</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+  
+        </div>
+                <!-- scrip for the image change animation-->
+            <script>function before10(){ 
+          document.getElementById('product10-img').src="./products/10.1.png";  
+           document.getElementById('full-dot10').src="./dot-full.svg";
+          document.getElementById('dot10').src="./dot.svg";
+      } 
+        
+      function after10(){ 
+          document.getElementById('product10-img') 
+          .src="./products/10.2.png";
+           document.getElementById('full-dot10').src="./dot.svg";
+        document.getElementById('dot10').src="./dot-full.svg"; 
+         
+      } </script>
+  
+          
+             <!-- scrip for the pop out window-->
+         <script type="text/javascript">
+         var modal = document.getElementById("model10");
+  // Get the button that opens the modal
+  var btn = document.getElementById("btn10");
+  
+  // Get the <span> element that closes the modal
+  var span = document.getElementsByClassName("close")[0];
+  
+  // When the user clicks on the button, open the modal
+  btn.onclick = function() {
+    modal.style.display = "block";
+  }
+  
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function() {
+    modal.style.display = "none";
+  }
+  
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }    
+         </script>
+  <!------------------------------------------------------->
+           
+          <footer>
+              <p class="endText">I hope everyone will find what they are looking for in our store <span style="color: #4d8eff;">^_^</span> Made by <span style="color: #4d8eff;">Team 7</span></p>
+              <div class="socialIcons">
+                 <img class="socialIcon" src="icons/android.png">
+                 <img class="socialIcon" src="icons/facebook.png">
+                 <img class="socialIcon" src="icons/google+.png">
+                 <img class="socialIcon" src="icons/in.png">
+                 <img class="socialIcon" src="icons/instagram.png">
+                 <img class="socialIcon" src="icons/twitter.png">
+              </div> 
+              
+          </footer>   
+       </div>
+     
+
+    <script src="JS/labtop.js"></script>
+    <script src="JS/home.js"></script>
+</body>
+</html>

@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>elSouq</title>
+    <link rel="icon" href="products/cart.svg" type="image/png">
+    <link rel="stylesheet" href="css/watch.css">
+    <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+
+    <div id="AdminValidation" class="menu">
+        <div class="content">
+            <div class="header">
+                <h>Modal Header</h>
+            </div>
+            <div class="body">
+                        <h>Please Write Your Admin Code</h>
+                        <input type="password" name="admincode" id="admincode" placeholder="Code">
+                        <input type="submit" name="submit" value="Login as admin" class="AdminButtons"onclick="CheckIfAdminValid()">
+            </div>
+        </div>
+    
+    </div>
+
+
+    <div id="AdminMenu" class="menu">
+        <div class="content">
+            <div class="header">
+                <h class="adhead">Modal Header</h>
+                </div>
+                <div class="body">
+                    <h class="adhead">Choose theme</h><br>
+                    <button class="AdminButtons">Theme 1</button>
+                    <button class="AdminButtons">Theme 2</button>
+                    <button class="AdminButtons">Theme 3</button><br>
+                    <h class="adhead">Change background color</h><br>
+                    <input type="color" id="BgColor">
+                    
+                </div>
+            </div>
+    
+    </div>
+
+    
+    <nav class="navpar" id="nvbar"> 
+        <div class="elSouq">
+            <img src="https://img.icons8.com/cotton/64/000000/shop--v2.png"/>
+            <a>elSouq</a>
+        </div>
+        
+        <div class="search">
+            <input type="text" placeholder="Search">
+            <img src="https://img.icons8.com/pastel-glyph/64/000000/search--v2.png"/> 
+        </div>
+        
+        <div class="accounts">
+            <button onclick="accounts()">Accounts</button>
+            <div id="list" class="methods">
+                <a href="login.html">Login as a User</a><br>
+                <a href="#" onClick="ShowAdminValidation()">Login as a Admin</a><br>
+                <a href="register.html">Sign Up</a>
+            </div>
+        </div>
+       
+        <div class="Lang-cur">
+            <select>
+                <option value="1">USD</option>
+                <option value="1">EUR</option>
+                <option value="1">AOA</option>
+                <option value="1">AUD</option>
+            </select>
+            <select>
+                <option value="1">ENG</option>
+                <option value="1">FRA</option>
+                <option value="1">BAN</option>
+            </select>
+        </div>
+
+    </nav>
+
+    <div class="leftPair" id="lp">
+        <br><br><br>
+        <ul>   
+           <li><a href="home.html" class="link">Home</a></li>
+           <li><a href="labtop.html" class="link">Labtops</a></li>
+           <li><a href="mobile.html" class="link">Mobiles</a></li>
+           <li style="background-color: #555;"><a style="color: white;"  href="watch.html" class="link">Watchs</a></li>
+           <li><a href="consoles.html" class="link">Consoles</a></li>
+           <li><a href="#" class="link" id="adminShow" onClick="ShowAdminMenu()">Admin Menu</a></li>      
+        </ul>  
+    </div>
+
+     <div class="rightPair">
+         <br><br><br>
+        <div class="brands">
+            <input onclick="apple()" id="A" type="button" value="Casio"> 
+            <input onclick="samsung()" id="s" type="button" value="Alba">  
+            <input onclick="realme()" id="R" type="button" value="Tissot"> 
+        </div>
+
+        <table align="center">
+           <br>
+        <div class="c" id="apple" style="display: none;">
+        <img src="photo/32.png">
+        <img src="photo/33.jpg">
+        <h2> Description: </h2>
+        <h3> Watch Information </h3>
+        <ul> 
+            <li> Band Color: Dark Brown </li>
+            <li> Case Color: Silver     </li>
+            <li> Dial Color: Silver     </li>
+            <li> Lug Color: Silver      </li>
+            <li> Clasp Type: Buckle     </li>
+            <li> Display Type: Analogue </li>
+            <li> Movement Type: Quartz  </li>
+        </ul>
+        <h3> Watch Material </h3>
+        <ul>
+            <li> Band Material: Leather          </li>
+            <li> Crystal Material: Mineral glass </li>
+            <li> Case Material: Stainless Steel  </li>
+        </ul>
+        <h3> Watch Features: </h3>
+        <ul>
+            <li> Sub-dials displaying weekdays, seconds elapsed counter, and minutes elapsed counter </li>
+            <li> Contrast stitch ...  </li>
+        </ul>
+        <hr />
+        <img src="photo/34.png">
+        <img src="photo/35.jpg">
+        <h2> Description: </h2>
+        <h3> Product Features: </h3>
+        <ul>
+            <li> Brand: Casio  </li>
+            <li> Watch Shape: Round  </li>
+            <li> Dial Case Diameter Size: 53.3×48.8×16.6mm </li>
+            <li> Band Material: Resin  </li>
+            <li> Display Type: Analog-Digital  </li>
+            <li> Targeted Group: Men </li>
+            <li> Type: Sports Watch </li>
+            <li> Model Number: HDC-700-1AVDF </li>
+        </ul>
+        <hr />
+        <img src="photo/36.png">
+        <img src="photo/37.jpg">
+        <h2> Description: </h2>
+        <h3> Product Features: </h3>
+        <ul>
+            <li> Brand: Casio  </li>
+            <li> Watch Shape: Round  </li>
+            <li> Dial Case Diameter Size:  </li>
+            <li> Band Material: Stainless Steel </li>
+            <li> Display Type: Analog </li>
+            <li> Targeted Group: Women </li>
+            <li> Type: Casual Watch  </li>
+            <li> Model Number: LTP-V002D-4BUDF </li>
+        </ul>
+        <hr />
+        <img src="photo/38.png">
+        <img src="photo/39.jpg">
+        <h2> Description: </h2>
+        <h3> Product Features:  </h3>
+        <ul> 
+            <li> Brand: Casio </li>
+            <li> Watch Shape: Round  </li>
+            <li> Dial Case Diameter Size:  </li>
+            <li> Band Material: Leather </li>
+            <li> Display Type: Analog  </li>
+            <li> Targeted Group: Women </li>
+            <li> Type: Casual Watch  </li>
+            <li> Model Number: LTP-V005GL-7BUDF </li>
+        </ul>
+        <hr />
+        <img src="photo/40.png">
+        <img src="photo/41.jpg">
+        <h2> Description: </h2>
+        <p>
+            Stylish and modern design timepiece. That can be worn along with most apparel,<br> in parties, special occasions or to send it as a gift.
+        </p>
+        <h3> SPECIFICATIONS: </h3>
+        <ul>
+            <li> Brand: Casio </li>
+            <li> Type: Sport Watch </li>
+            <li> Targeted Group: Men </li>
+            <li> Display Type: Analog-Digital </li>
+            <li> Band Material: Resin </li>
+            <li> Watch Shape: Round </li>
+        </ul>
+        </div>
+
+        <br>
+            <div class="Al" id="samsung" style="display: none;">
+                <img src="photo/42.png">
+                <img src="https://cf1.s3.souqcdn.com/item/2019/07/10/56/19/87/28/item_XXL_56198728_ee0e863418608.jpg">
+                <h2> Description: </h2>
+                <h3> Watch Specifications </h3>
+                <ul>
+                    <li> Band Material: Leather </li>
+                    <li> Case Material: Stainless Steel </li>
+                    <li> Window Material: Mineral Crystal </li>
+                    <li> Dial Color: Gradient Brown </li>
+                    <li> Movement Type: Quartz </li>
+                    <li> Crown Shape: Flat </li>
+                </ul>
+                <h3> Watch Features </h3>
+                <ul>
+                    <li> Water Resistance Level: 50 meters </li>
+                    <li> Snap back closure </li>
+                    <li> Dial accessorized with pin heads </li>
+                    <li> 60 minute chronograph accurate to 1/5 second </li>
+                    <li> Sub-Dials displaying 24-hour format, minutes, and seconds </li>
+                    <li> Aperture displaying the ...  </li>
+                </ul>
+                <hr />
+                <img src="photo/43.png">
+                <img src="https://cf4.s3.souqcdn.com/item/2019/07/09/55/52/67/99/item_XL_55526799_31fa61957796f.jpg">
+                <h2> Description: </h2>
+                <h3> Watch Specifications </h3>
+                <ul>
+                    <li> Band Material: Stainless Steel </li>
+                    <li> Window Material: Dome Glass </li>
+                    <li> Dial Color: Silver White </li>
+                    <li> Movement Type: Automatic </li>
+                    <li> Crown Shape: Domed </li>
+                </ul>
+                <h3> Watch Features </h3>
+                <ul>
+                    <li> Water Resistance Level: 50 meters </li>
+                    <li> Screw see-through back closure </li>
+                    <li> Hour, minute, and seconds hands </li>
+                    <li> Sub-Dials for 24-hour format display and counting seconds </li>
+                </ul>
+                <hr />
+                <img src="photo/44.png">
+                <img src="https://cf4.s3.souqcdn.com/item/2019/07/09/55/52/69/43/item_XXL_55526943_78086a4d2fe6d.jpg">
+                <h2>  Description: </h2>
+                <h3> Watch Specifications </h3>
+                <ul>
+                    <li> Band Material: Stainless Steel </li>
+                    <li> Window Material: Mineral Crystal </li>
+                    <li> Dial Color: Silver White </li>
+                    <li> Movement Type: Quartz </li>
+                    <li> Crown Shape: Flat </li>
+                </ul>
+                <h3> Watch Features </h3>
+                <ul>
+                    <li> Water Resistance Level: 30 meters </li>
+                    <li> Snap back closure </li>
+                    <li> Hour, minute, and seconds hands </li>
+                    <li> Aperture displaying the day of the month. </li>
+                </ul>
+                <hr />
+                <img src="photo/45.png">
+                <img src="https://cf1.s3.souqcdn.com/item/2019/07/09/55/52/69/95/item_XXL_55526995_4a030867e128d.jpg">
+                <h2> Description: </h2>
+                <h3> Watch Specifications </h3>
+                <ul>
+                    <li> Band Material: Stainless Steel </li>
+                    <li> Window Material: Mineral Crystal </li>
+                    <li> Dial Color: Gradient Brown </li>
+                    <li> Movement Type: Quartz </li>
+                    <li> Crown Shape: Flat </li>
+                </ul>
+                <h3> Watch Features </h3>
+                <ul>
+                    <li> Water Resistance Level: 30 meters </li>
+                    <li> Snap back closure </li>
+                    <li> No inidices </li>
+                    <li> Strass-Detail </li>
+                    <li> Hour, minute, and seconds hands </li>
+                </ul>
+                <hr />
+                <img src="photo/46.png">
+                <img src="https://cf1.s3.souqcdn.com/item/2019/07/10/56/19/83/60/item_XL_56198360_a37d353d79d7e.jpg">
+                <h2> Description: </h2>
+                <h3> Watch Specifications </h3>
+                <ul>
+                    <li> Band Material: Leather </li>
+                    <li> Case Material: Stainless Steel </li>
+                    <li> Window Material: Mineral Crystal </li>
+                    <li> Dial Color: Grey </li>
+                    <li> Movement Type: Quartz </li>
+                    <li> Crown Shape: Threaded </li>
+                </ul>
+                <h3> Watch Features </h3>
+                <ul>
+                    <li> Water Resistance Level: 50 meters </li>
+                    <li> Contrasting hands and markers. </li>
+                    <li> Screw back closure </li>
+                    <li> Aperture displaying the day of the month. </li>
+                </ul>
+            </div>
+            <br>
+            <div class="T" id="realme" style="display: none;">
+                <img src="photo/47.png">
+                <img src="https://cf2.s3.souqcdn.com/item/2020/02/20/11/66/95/74/6/item_XXL_116695746_03d0d28a2a23a.jpg">
+                <h2> Description: </h2>
+                <ul>
+                    <li> Brand: Tissot </li>
+                    <li> Model name: T116.410.16.047 </li>
+                    <li> Type: Casual Watch </li>
+                    <li> Watch shape: Round </li>
+                    <li> Case diameter: 42 millimeters </li>
+                    <li> Band material: Leather </li>
+                    <li> Stainless steel case </li>
+                    <li> Scratch resistant </li>
+                    <li> Dial Color: Navy </li>
+                </ul>
+                <hr />
+                <img src="photo/48.png">
+                <img src="https://cf4.s3.souqcdn.com/item/2020/02/20/11/66/96/03/6/item_XXL_116696036_9dee9896df009.jpg">
+                <h2> Description: </h2>
+                <ul>
+                    <li> Brand: Tissot </li>
+                    <li> Model name: T127.410.16.031 </li>
+                    <li> Type: Casual Watch </li>
+                    <li> Watch shape: Round </li>
+                    <li> Case diameter: 40 millimeters </li>
+                    <li> Band material: Leather </li>
+                    <li> Stainless steel case </li>
+                    <li> Water resistant: 100 meters </li>
+                    <li> Dial Color: Silver </li>
+                </ul>
+                <hr />
+                <img src="photo/49.png">
+                <img src="https://cf1.s3.souqcdn.com/item/2020/02/20/11/66/95/67/8/item_XL_116695678_c3c1fdda7b990.jpg">
+                <h2> Description: </h2>
+                <ul>
+                    <li> Brand: Tissot </li>
+                    <li> Model name: T063.409.16.018 </li>
+                    <li> Type: Casual Watch </li>
+                    <li> Watch shape: Round </li>
+                    <li> Case diameter: 42 millimeters </li>
+                    <li> Band material: Leather </li>
+                    <li> Stainless steel case </li>
+                    <li> Roman numeral markers </li>
+                    <li> Dial Color: White </li>
+                </ul>
+                <hr />
+                <img src="photo/50.png">
+                <img src="https://cf2.s3.souqcdn.com/item/2020/02/20/11/66/95/90/1/item_XXL_116695901_92ab5d40a929e.jpg">
+                <h2> Description: </h2>
+                <ul>
+                    <li> Brand: Tissot </li>
+                    <li> Model name: T112.210.11.036 </li>
+                    <li> Type: Casual Watch </li>
+                    <li> Watch shape: Round </li>
+                    <li> Case diameter: 42 millimeters </li>
+                    <li> Band material: Stainless Steel </li>
+                    <li> Scratch resistant </li>
+                    <li> Crystal Embellished Markers </li>
+                    <li> Dial Color: Grey </li>
+                </ul>
+                <hr />
+                <img src="photo/51.png">
+                <img src="https://cf3.s3.souqcdn.com/item/2020/02/20/11/66/95/63/2/item_XL_116695632_5c93443eaf808.jpg">
+                <h2> Description: </h2>
+                <ul>
+                    <li> Brand: Tissot </li>
+                    <li> Model name: T116.617.37.097 </li>
+                    <li> Type: Casual Watch </li>
+                    <li> Watch shape: Round </li>
+                    <li> Case diameter: 44 millimeters </li>
+                    <li> Band material: Leather </li>
+                    <li> Stainless steel case </li>
+                    <li> Scratch resistant </li>
+                    <li> Dial Color: Olive </li>
+                </ul>
+            </div>
+            <br>
+        </table>   
+    </div>
+     
+    <script src="JS/watch.js"></script>
+    <script src="JS/home.js"></script>
+</body>
+</html>

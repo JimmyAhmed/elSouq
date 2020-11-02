@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>elSouq</title>
+    <link rel="icon" href="products/cart.svg" type="image/png">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+
+    <div id="AdminValidation" class="menu">
+        <div class="content">
+            <div class="header">
+                <h>Modal Header</h>
+            </div>
+            <div class="body">
+                        <h>Please Write Your Admin Code</h>
+                        <input type="password" name="admincode" id="admincode" placeholder="Code">
+                        <input type="submit" name="submit" value="Login as admin" class="AdminButtons"onclick="CheckIfAdminValid()">
+            </div>
+        </div>
+    
+    </div>
+
+
+    <div id="AdminMenu" class="menu">
+        <div class="content">
+            <div class="header">
+                <h class="adhead">Modal Header</h>
+                </div>
+                <div class="body">
+                    <h class="adhead">Choose theme</h><br>
+                    <button class="AdminButtons">Theme 1</button>
+                    <button class="AdminButtons">Theme 2</button>
+                    <button class="AdminButtons">Theme 3</button><br>
+                    <h class="adhead">Change background color</h><br>
+                    <input type="color" id="BgColor">
+                    
+                </div>
+            </div>
+    
+    </div>
+
+    
+    <nav class="navpar" id="nvbar">
+        <div class="elSouq">
+            <img src="https://img.icons8.com/cotton/64/000000/shop--v2.png"/>
+            <a>elSouq</a>
+        </div>
+        
+        <div class="search">
+            <input type="text" placeholder="Search">
+            <img src="https://img.icons8.com/pastel-glyph/64/000000/search--v2.png"/> 
+        </div>
+        
+        <div class="accounts">
+            <button onclick="accounts()">Accounts</button>
+            <div id="list" class="methods">
+                <a href="login.html">Login as a User</a><br>
+                <a href="#" onClick="ShowAdminValidation()">Login as a Admin</a><br>
+                <a href="register.html">Sign Up</a>
+            </div>
+        </div>
+       
+        <div class="Lang-cur">
+            <select>
+                <option value="1">USD</option>
+                <option value="1">EUR</option>
+                <option value="1">AOA</option>
+                <option value="1">AUD</option>
+            </select>
+            <select>
+                <option value="1">ENG</option>
+                <option value="1">FRA</option>
+                <option value="1">BAN</option>
+            </select>
+        </div>
+
+    </nav>
+
+    <div class="leftPair" id="lp">
+        <br><br><br>
+        <ul>   
+           <li><a href="home.html" class="link">Home</a></li>
+           <li><a href="labtop.html" class="link">Labtops</a></li>
+           <li style="background-color: #555;" ><a style="color: white;" href="mobile.html" class="link">Mobiles</a></li>
+           <li><a href="watch.html" class="link">Watchs</a></li>
+           <li><a href="consoles.html" class="link">Consoles</a></li>
+           <li><a href="#" class="link" id="adminShow" onClick="ShowAdminMenu()">Admin Menu</a></li>      
+        </ul>  
+     </div>
+
+     <div class="rightPair">
+        <br><br><br><br>
+         <div class="brands">
+             <input onclick="apple()" id="A" type="button" value="Apple"> 
+             <input onclick="samsung()" id="s" type="button" value="Samsung">  
+             <input onclick="realme()" id="R" type="button" value="Realme"> 
+         </div>
+
+        
+
+        <table class="elTable" align="center">
+        
+            
+            <br>
+
+            <div class="appl" id="apple">
+                <img src="photo/4.png">
+                <img src="photo/1.jpg.jpg">
+                <ul >
+                    <li> Camera Resolution: 12mp ultra wide + 12 mp wide </li>
+                    <li> Ram: 4 gb </li>
+                    <li> Second camera: 12mp </li>
+                    <li> Networking topology: 4g lte </li>
+                    <li> Price is = 13,697.00 EGP </li>
+                </ul>
+                <h2> Description:</h2>
+                <p> 
+
+The Apple iPhone 11 smartphone is a high-end smartphone that delivers impeccably smooth performance with its A13 Bionic chip that features Neural Engine. So, now be it editing photos or loading high-end games; your smartphone will do it all within a blink of an eye. This 4GB RAM Apple phone makes the multitasking as smooth as it gets. Capture moments and bring them to life, thanks ... </p>
+                <hr />
+                  <img src="photo/3.png">
+                <img src="photo/5.jpg">
+                <li> Price is = 19,999.00 EGP</li>
+                <br>
+                <h2> Description: </h2>
+                <p>
+                       
+
+                  Considering both style and functionality, the Apple iPhone 7 Plus with FaceTime is, in its true sense, a smartphone. Its trendy rose gold finish adds a touch of elegance to its overall appearance. The iPhone 7 Plus rose gold is solidly built and boasts an IP67 water and dust resistance. The inclusion of two speakers instead of one in the iPhone is sure to make heads turn. Its ... 
+                </p>
+                 <hr />
+                <img src="photo/7.png">
+                <img src="photo/6.jpg">
+                <ul>
+                    <li> Camera Resolution: 12 mp </li>
+                    <li> Ram: 2 gb </li>
+                    <li> Second camera: 7 mp </li>
+                    <li> Networking topology: 4g_lte </li>
+                    <li> Price is = 8,249.00 EGP </li>
+                </ul>
+                <h2> Description: </h2>
+                <p>
+                     
+
+Apple iPhone 8 features a dual rear camera setup that clicks excellent pictures, any time of the day. This iPhone 8 looks appealing in a dazzling silver finish.The Apple iPhone 8 gives you a smooth user experience and rich entertainment. It runs on an A11 Bionic chip that features a six-core CPU design with four efficiency cores that are 70 percent faster and two performance cores that ..
+                </p>
+                 <hr />
+                <img src="photo/9.png">
+                <img src="photo/8.jpg">
+                <ul>
+                    <li> Camera Resolution: 12 mp + 12 mp </li>
+                    <li> Ram: 4 gb </li>
+                    <li> Second camera: 7 mp </li>
+                    <li> Networking topology: 4g lte </li>
+                    <li> Price is = 14,814.00 EGP </li>
+                </ul>
+                <h2> Description:  </h2>
+                <p>
+                    The Apple iPhone Xs Max smartphone offers the best of both, technology and style. This Apple smartphone with the 6.5inch Super Retina OLED display delivers images that keep you glued to the screen for long. With wide color gamut and True Tone feature, this Apple smartphone delivers images that are pleasing to the eye. The 12MP rear and 7MP front camera let you click photos and record 4K ...
+                </p>
+                 <hr />
+                <img src="photo/10.png">
+                <img src="photo/11.jpg">
+                <ul>
+                    <li> Ram: 2 gb </li>
+                    <li> Second camera: yes, 5 megapixe </li>
+                    <li> Networking topology: 4g lte</li>
+                    <li> Price is = 11,000.00 EGP </li>
+                </ul>
+                <h2> Description:  </h2>
+                <p> 
+                    If you are keen on a smartphone that facilitates quick processing of tasks, the Apple iPhone 6s Plus makes a great choice. The new 3D Touch technology helps make interactions with tasks, applications, and games quick as well as effortless. A large 5.5inch Retina touchscreen makes this smartphone a joy to use. New features serve to make iOS 9, which features a simple user interface, ...
+                </p>
+                 
+            </div>
+
+            <br>
+
+            <div class="sam" id="samsung"> 
+                <img src="photo/12.png">
+                <img src="photo/13.jpg">
+                <ul>
+                    <li> Camera Resolution: 12mp + 108mp + 12mp, 50x space zoom </li>
+                    <li> Ram: 8 gigabytes </li>
+                    <li> Networking topology: 4g lte </li>
+                    <li> Price is = 20,998.98 EGP </li>
+                </ul>
+                <h2> Description: </h2>
+                <ul> 
+                    <li> Brand: Samsung </li>
+                    <li> Model Number: Galaxy Note 20 Ultra </li>
+                    <li> Number Of SIM: Hybrid Dual SIM </li>
+                    <li> Display Size: 6.9 Inches </li>
+                    <li> Storage Capacity: 256 GB </li>
+                    <li> Memory RAM: 8 GB </li>
+                    <li> Cameras: 12MP + 108MP + 12MP, 50x Space Zoom </li>
+                    <li> Cellular Network Technology: 4G LTE </li>
+                    <li> Battery Capacity: 4500 mAh </li>
+                    <li> Fast Charge  </li>
+                    <li> Operating System Type: Android </li>
+                    <li> Color: Mystic White </li>
+                    
+                </ul>
+                 <hr />
+                <img src="photo/14.png">
+                <img src="photo/15.jpg">
+             <ul>
+                 <li> Camera Resolution: 12 mp + 12 mp + 64 mp </li>
+                 <li> Ram: 8 gb </li>
+                 <li> Second camera: 10 mp </li>
+                 <li> Networking topology: 4g lte </li>
+                 <li> 14,500.00 EGP </li>
+             </ul>
+                <h2> Description: </h2>
+                <p>
+                    Bring home the Samsung Galaxy S20 Dual-SIM Smartphone that is a perfect amalgam of style and functionality. Its bezels are pushed back that offer an eye-catchy look. Moreover, the Samsung Galaxy S20 dual-SIM smartphone has an HDR10 Plus certified 6.2inch Infinity-O Display that provides an incredibly immersive viewing experience. It keeps you ..
+                </p>
+                 <hr />
+                <img src="photo/16.png">
+                <img src="photo/17.jpg">
+                <ul>
+                    <li> External Product ID: 8806090010743 </li>
+                    <li> Operating System: android </li>
+                    <li> Storage Capacity: 32 gb </li>
+                    <li> Memory Size: 2 gb </li>
+                    <li> Display Type: tft </li>
+                    <li> Price is = 2,616.00 EGP </li>
+                </ul>
+                <h2> Description: </h2>
+                <p>
+                    Stay on top of your entertainment game with the Samsung Galaxy Tab A. The inch screen of this tab renders mesmerizing images that make anything that you view an absolute delight. The dual speakers deliver crisp sound for an immersive experience like never before. Get used to the pace of modern-day computing, as this Samsung tablet has a 2GHz, Quad-Core processor ...
+                </p>
+                 <hr />
+                <img src="photo/18.png">
+                <img src="photo/19.jpg">
+                <ul>
+                    <li> Camera Resolution: 48mp + 8mp + 3d depth </li>
+                    <li> Ram: 8 gb </li>
+                    <li> Networking topology: 4g lte </li>
+                    <li> Price is =  7,625.00 EGP </li>
+                </ul>
+                <h2> Description: </h2>
+                <p> 
+                    Keep up with today's fast-paced life with the Samsung Galaxy A80 Dual-SIM smartphone. It has an eye-catchy Ghost White color that never fails to impress. Plus, the lightweight glass and metal frame of this smartphone is ergonomically designed for a pleasant handling experience. The Galaxy A80 smartphone boasts of Knox security for storing your sensitive data. Similarly, this ...
+                </p>
+                 <hr />
+                <img src="photo/20.png">
+                <img src="photo/21.jpg">
+                <ul>
+                    <li> Camera Resolution: 12 mp + 12 mp </li>
+                    <li> Ram: 6 gb </li>
+                    <li> Second camera: 8 mp </li>
+                    <li> Networking topology: 4g lte </li>
+                    <li> Price is = 12,200.00 EGP </li>
+                </ul>
+                <h2> Description: </h2>
+                <p> 
+                    The Samsung Galaxy Note 9 smartphone is a result of intelligent engineering. Immersed in innovation, the smartphone offers an incredible user experience with its intelligently developed features and functions. To begin with, the smartphone sports a large 6.4inch Super AMOLED screen, which is enhanced with the Infinity display feature to provide an excellent viewing experience. ...
+                </p>
+                
+            </div>
+
+            <br>
+
+            <div class="R" id="realme">
+                <img src="photo/22.png">
+                <img src="photo/23.jpg">
+                <h2> Description: </h2>
+                <p> 
+                     realme X3 SuperZoom Super Zoom, Super Speed. Explore the world with 60X Super Zoom.
+
+The realme X3 SuperZoom camera system is equipped with a new periscope zoom lens, bringing you an all-new photography experience. It supports 0.5X to 60X wide zoom range so you can take in any view, whether it's right in front of you or far ... 
+                </p>
+                 <hr />
+                <img src="photo/24.png">
+                <img src="photo/25.jpg">
+                <h2>  Description:  </h2>
+                <p>
+                     Physical Features Key Features<br>
+
+ROM: 128GB<br>
+
+RAM: 8GB<br>
+
+Quad Rear Camera: 64MP + 8MP + 12MP + 2 MP
+                </p>
+                 <hr />
+                <br>
+                <img src="photo/26.png">
+                <img src="photo/27.jpg">
+                <h2> Description:  </h2>
+                <p>
+                     Physical Features Key Features<br>
+
+6.5" Mini-drop Fullscreen<br>
+
+5000mAh Massive Battery<br>
+
+4G LTE<br>
+
+48MP AI Quad Camera<br>
+
+Helio G80 Processor<br>
+
+Dual SIM<br>
+Unleash Powerful Performance Helio G80 ... 
+                </p>
+                 <hr />
+                <img src="photo/28.png">
+                <img src="photo/29.jpg">
+                <h2> Description: </h2>
+                <p>
+                     realme X3 SuperZoom Super Zoom, Super Speed. Explore the world with 60X Super Zoom.
+
+The realme X3 SuperZoom camera system is equipped with a new periscope zoom lens, bringing you an all-new photography experience. It supports 0.5X to 60X wide zoom range so you can take in any view, whether it's right in front of you or far ... 
+                </p>
+                <hr />
+                <img src="photo/30.png">
+                <img src="photo/31.jpg">
+                <h2> Description:  </h2>
+                <p> 
+                    5000mAh Massive Battery<br>
+
+Extraordinary 40-Day Standby Turn Your C11 into A Charging Station 
+                </p>
+                <br>
+            </div>
+        </table>
+
+
+
+
+
+          
+     </div>
+     
+
+    <script src="JS/home.js"></script>
+    <script src="js/mobile.js"></script>
+</body>
+</html>

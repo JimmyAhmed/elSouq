@@ -1,0 +1,229 @@
+.appl {
+    display: none;
+}
+
+.sam {
+    display: none;
+}
+
+.R {
+    display: none;
+}
+
+.brands {
+    text-align: center;
+    padding: 50px;
+    
+}
+
+
+.brands input{
+    box-shadow: 0 0px 2px 1px #ffffff;
+    padding: 8px 25px;
+    border: 0px;
+    font-weight: bold;
+    text-shadow: rgb(85, 85, 85) 0px 1px 2px;
+    font-size: 20px;
+    color: #fff;
+}
+
+.brands h1 {
+    display: inline;
+    font-weight: bold;
+    text-shadow: rgb(85, 85, 85) 0px 1px 2px;
+    font-size: 30px;
+    padding: 60px;
+    color: #555;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Courier New;
+
+    
+}
+
+/*Navpar*/
+
+.navpar {
+    box-shadow: 0 8px 6px -6px #000;
+    width: 100%;
+    background: linear-gradient(to right, #4e8dff, #203A43, #0F2027);
+    padding: 10px;
+    z-index: 1500;
+    position: fixed;
+}
+
+.navpar h1 {
+    display: inline;
+    
+    font-size: 45px;
+    color: white;
+    text-shadow: 0px 3px 5px #545454;
+}
+
+.navpar img {
+    margin-bottom: -11px;
+    width: 40px;
+    background-color: white;
+    border: 1px solid #e2e2e2;
+    border-radius: 10px;
+}
+
+.navpar img:hover, select:hover, h2:hover{
+    opacity: 20%;
+}
+
+.navpar input {
+    padding: 3px;
+    width: 550px;
+    font-size: 20px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    margin-left: 150px;
+}
+
+.navpar button {
+    border: 0;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.navpar .barList{
+    display: none;
+    background-color: #192b33;
+    box-shadow: 0 8px 5px 11px #192b33;
+    position: absolute;
+    margin-left: 995px;
+    margin-top: 10px;
+}
+
+.navpar .barList a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    color: white;
+    font-size: 20px;
+    text-shadow: 2px 1px 2px #3766a5;
+    font-family: serif;
+}
+
+.navpar .barList a:hover{
+    opacity: 20%;
+}
+
+.navpar h2 {
+    display: inline;
+    padding: 20px;
+    font-size: 25px;
+    color: #fffefe;
+    text-shadow: 0px 3px 5px #5e5353;
+}
+
+.navpar select {  
+    background-color: white;
+    border: 1px solid #e2e2e2;
+    border-radius: 10px;
+    padding: 5px;
+    font-weight: bold;
+}
+
+/*Left Pair*/
+
+.leftPair {
+    float: left;
+    width: 12%;
+    height: 100%;
+    position: fixed;
+    box-shadow: 0 8px 5px -1px #152931;
+}
+
+.leftPair a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 15px 30px;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    text-shadow: 2px 1px 2px #3766a5;
+}
+
+
+/*Right Pair*/
+
+.rightPair {
+    float: right;
+    width: 88%;
+}
+
+/*start here!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+.o{
+    
+    position: fixed;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 2px;
+    color:royalblue;
+    font-size: 25px;
+    border-style: groove;
+    
+}
+#A{
+    background-color: #12242b;
+    border-radius: 5px;
+}
+#s{
+    background-color: #467ede;
+    border-radius: 5px;
+}
+#R{
+    background-color:#3cb371;
+    border-radius: 5px;
+    border-color:purple;
+}
+.appl,.c{
+        border-radius: 10px;
+        border: 5px solid #11242b;
+    
+}
+
+
+.sam,.Al{
+    border-radius: 10px;
+    border: 5px solid #467ede;
+    padding-top: 20px;
+    color: darkred;
+}
+.R,.T{
+        border-radius: 10px;
+    border: 5px solid #3cb371;
+    padding-top: 20px;
+    color: darkorange;
+}
+
+/*Footer*/
+
+footer {
+    background-color: #0000001f;
+    clear: both;
+    padding: 20px;
+}
+
+.endText {
+    display: inline;
+    padding: 20px;
+    clear: both;
+    font-weight: bold;
+    color: #777777;
+}
+
+.socialIcon {
+    float: right;
+    width: 20px;
+    margin-right: 10px;
+}
+
+.socialIcon:hover {
+    opacity: 20%;
+}

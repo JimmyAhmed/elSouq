@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>elSouq</title>
+    <link rel="icon" href="products/cart.svg" type="image/png">
+    <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+
+    <div id="AdminValidation" class="menu">
+        <div class="content">
+            <div class="header">
+                <h class="adheader">Admin Validation</h>
+            </div>
+            <div class="body">
+                        <h class="adheader">Please Write Your Admin Code</h>
+                        <input type="password" name="admincode" id="admincode" placeholder="Code">
+                        <input type="submit" name="submit" value="Login as admin" class="AdminButtons"onclick="CheckIfAdminValid()">
+            </div>
+        </div>
+    
+    </div>
+
+
+    <div id="AdminMenu" class="menu">
+        <div class="content">
+            <div class="header">
+                <h class="adhead">Admin Menu</h>
+                </div>
+                <div class="body">
+                    <h class="adhead">Choose theme</h><br>
+                    <button class="AdminButtons" onclick="Theme1()">Theme 1</button>
+                    <button class="AdminButtons" onclick="Theme2()">Theme 2</button>
+                    <button class="AdminButtons" onclick="Theme3()">Theme 3</button><br>
+                    <h class="adhead">Change background color</h><br>
+                    <input type="color" id="BgColor">
+                    
+                </div>
+            </div>
+    
+    </div>
+
+    
+    <nav class="navpar" id="nvbar">
+        <div class="elSouq">
+            <img src="https://img.icons8.com/cotton/64/000000/shop--v2.png"/>
+            <a>elSouq</a>
+        </div>
+        
+        <div class="search">
+            <input type="text" placeholder="Search">
+            <img src="https://img.icons8.com/pastel-glyph/64/000000/search--v2.png"/> 
+        </div>
+        
+        <div class="accounts">
+            <button onclick="accounts()">Accounts</button>
+            <div id="list" class="methods">
+                <a href="login.html">Login as a User</a><br>
+                <a href="#" onClick="ShowAdminValidation()">Login as a Admin</a><br>
+                <a href="register.html">Sign Up</a>
+            </div>
+        </div>
+       
+        <div class="Lang-cur">
+            <select>
+                <option value="1">USD</option>
+                <option value="1">EUR</option>
+                <option value="1">AOA</option>
+                <option value="1">AUD</option>
+            </select>
+            <select>
+                <option value="1">ENG</option>
+                <option value="1">FRA</option>
+                <option value="1">BAN</option>
+            </select>
+        </div>
+
+    </nav>
+
+    <div class="leftPair" id="lp">
+        <br><br><br>
+        <ul>   
+           <li style="background-color: #555;"><a style="color: white;" href="home.html" class="link">Home</a></li>
+           <li><a href="labtop.html" class="link">Labtops</a></li>
+           <li><a href="mobile.html" class="link">Mobiles</a></li>
+           <li><a href="watch.html" class="link">Watchs</a></li>
+           <li><a href="consoles.html" class="link">Consoles</a></li>
+           <li><a href="#" class="link" id="adminShow" onClick="ShowAdminMenu()">Admin Menu</a></li>      
+        </ul>  
+    </div>
+
+     <div class="rightPair">     
+
+        <div class="banner" id="banner">
+            <span>WELCOME IN</span>
+            <h1>elSouq</h1>
+            <p>If you are looking for the best products at the best prices<br>Smile ^_^ you are in the right place</p><br>
+            <a href="https://www.youtube.com/watch?v=mhDuH_83ZYY"><img src="https://img.icons8.com/cotton/64/000000/shopping-basket.png"/></a>
+        </div>
+
+        <div class="categories">
+            <div class="container">
+                <img src="images/consoles.jpg" alt="Error!!">
+                <div class="layer">
+                    <a href="consoles.html"><div class="text">Consoles</div></a>
+                </div>
+            </div>
+                
+            <div class="container">
+                <img src="images/watches.jpg" alt="Error!!">
+                <div class="layer">
+                    <a href="watch.html"><div class="text">watches</div></a>
+                </div>
+            </div>
+
+            <div class="container">
+                <img src="images/phones.jpg" alt="Error!!">
+                <div class="layer">
+                    <a href="mobile.html"><div class="text">Phones</div></a>
+                </div>           
+            </div>
+
+            <div class="container">
+                <img src="images/laptops.jpg" alt="Error!!">
+                <div class="layer">
+                    <a href="labtop.html"><div class="text">Laptops</div></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="informations">
+            <br>
+            <p>Some informations that may interest you</p>
+            <h1>Offers & Sales</h1>
+            <img src="https://img.icons8.com/nolan/64/offer-hot-price.png"/>
+            <img src="https://img.icons8.com/nolan/64/sale.png"/>
+            <p>We have many great offers on many different products and we believe that these offers suit everyone</p>
+            <div class="ads" id="ads">
+                <a href="https://www.samsung.com/eg/"><img style="width: 100%;" src="images/samsungAds.png" alt="Errors!!"></a>
+                <p>Ads by <span> Google </span><button onclick="stopAds()">Stop seeing this ad</button></p>
+                
+            </div>
+        </div>
+
+        <div class="offers">
+            <div class="newTitles">
+                <h1>Latest offers</h1>
+                <img src="https://img.icons8.com/nolan/64/new.png"/>
+            </div>
+            
+            <div class="container">
+                <img src="images/consoles2.jpg" alt="Error!!">
+                <div class="layer">
+                    <a href="consoles.html"><div class="text">Consoles</div></a>
+                </div>
+            </div>        
+                
+            <div class="container">
+                <img src="images/phones2.jpg" alt="Error!!">
+                <div class="layer">
+                    <a href="mobile.html"><div class="text">Phones</div></a>
+                </div>
+            </div>
+
+            <div class="container">
+                <img src="images/watches2.jpg" alt="Error!!">
+                <div class="layer">
+                    <a href="watch.html"><div class="text">watches</div></a>
+                </div>          
+            </div>
+
+            <div class="container">
+                <img src="images/laptops2.jpg" alt="Error!!">
+                <div class="layer">
+                    <a href="labtop.html"><div class="text">Laptops</div></a>
+                </div>
+            </div>
+
+            <div class="buttonMore" id="buttonMore">
+                <button onclick="more()">More...</button>
+            </div>
+
+            <div class="moreContainers" id="moreContainers">
+                <div class="container">
+                    <img src="images/watches.jpg" alt="Error!!">
+                    <div class="layer">
+                    <a href="watch.html"><div class="text">watches</div></a>
+                    </div>
+                </div>
+                    
+                <div class="container">
+                    <img src="images/consoles3.jpg" alt="Error!!">
+                    <div class="layer">
+                    <a href="consoles.html"><div class="text">Consoles</div></a>
+                    </div>
+                </div>
+    
+                <div class="container">
+                    <img src="images/watches3.jpg" alt="Error!!">
+                     <div class="layer">
+                    <a href="watch.html"><div class="text">watches</div></a>
+                    </div>         
+                </div>
+    
+                <div class="container">
+                    <img src="images/phones3.jpg" alt="Error!!">
+                    <div class="layer">
+                        <a href="#"><div class="text">Phones</div></a>
+                    </div>
+                </div>
+    
+                <div class="container">
+                    <img src="images/watches4.jpg" alt="Error!!">
+                    <div class="layer">
+                    <a href="watch.html"><div class="text">watches</div></a>
+                     </div>
+                </div>
+                    
+                <div class="container">
+                    <img src="images/laptops.jpg" alt="Error!!">
+                <div class="layer">
+                    <a href="labtop.html"><div class="text">Laptops</div></a>
+                </div>
+                </div>
+    
+                <div class="container">
+                    <img src="images/consoles.jpg" alt="Error!!">
+                    <div class="layer">
+                        <a href="consoles.html"><div class="text">Consoles</div></a>
+                    </div>           
+                </div>
+    
+                <div class="container">
+                    <img src="images/consoles4.jpg" alt="Error!!">
+                    <div class="layer">
+                    <a href="consoles.html"><div class="text">Consoles</div></a>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </div> 
+
+        <div class="ads" id="ads2">
+            <a href="https://www.google.com"><img style="width: 100%;" src="images/schoolAds.png" alt="Errors!!"></a>
+            <p>Ads by <span> Google </span><button onclick="stopAds2()">Stop seeing this ad</button></p>
+            
+        </div>
+
+        <footer>
+            <p class="endText">I hope everyone will find what they are looking for in our store <span style="color: #4d8eff;">^_^</span> Made by <span style="color: #4d8eff;">Team 7</span></p>
+            <div class="socialIcons">
+               <img class="socialIcon" src="icons/android.png">
+               <img class="socialIcon" src="icons/facebook.png">
+               <img class="socialIcon" src="icons/google+.png">
+               <img class="socialIcon" src="icons/in.png">
+               <img class="socialIcon" src="icons/instagram.png">
+               <img class="socialIcon" src="icons/twitter.png">
+            </div> 
+            
+        </footer>    
+     </div>
+     
+
+    <script src="JS/home.js"></script>
+</body>
+</html>
